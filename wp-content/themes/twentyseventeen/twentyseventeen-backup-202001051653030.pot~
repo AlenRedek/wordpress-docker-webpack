@@ -1,0 +1,360 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Twenty Seventeen\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-05 16:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.3.2"
+
+#. Used between list items, there is a space after the comma.
+#: ../twentyseventeen/inc/template-tags.php:66
+msgid ", "
+msgstr ""
+
+#. %s: Post date.
+#: ../twentyseventeen/inc/template-tags.php:52
+#, php-format
+msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
+msgstr ""
+
+#: ../twentyseventeen/functions.php:352 ../twentyseventeen/functions.php:364
+msgid "Add widgets here to appear in your footer."
+msgstr ""
+
+#: ../twentyseventeen/functions.php:340
+msgid ""
+"Add widgets here to appear in your sidebar on blog posts and archive pages."
+msgstr ""
+
+#: ../twentyseventeen/sidebar.php:18 ../twentyseventeen/functions.php:338
+msgid "Blog Sidebar"
+msgstr ""
+
+#. %s: Post author.
+#: ../twentyseventeen/inc/template-tags.php:21
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: ../twentyseventeen/inc/template-tags.php:85
+msgid "Categories"
+msgstr ""
+
+#: ../twentyseventeen/functions.php:484
+msgid "Collapse child menu"
+msgstr ""
+
+#: ../twentyseventeen/inc/customizer.php:60
+msgid "Color Scheme"
+msgstr ""
+
+#: ../twentyseventeen/comments.php:82
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: Number of comments, 2: Post title.
+#: ../twentyseventeen/comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %s: Post title.
+#: ../twentyseventeen/comments.php:37
+#, php-format
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr ""
+
+#. %s: Post title.
+#: ../twentyseventeen/functions.php:392
+#: ../twentyseventeen/template-parts/page/content-front-page-panels.php:45
+#: ../twentyseventeen/template-parts/page/content-front-page.php:42
+#: ../twentyseventeen/template-parts/post/content-gallery.php:71
+#: ../twentyseventeen/template-parts/post/content-audio.php:84
+#: ../twentyseventeen/template-parts/post/content-image.php:61
+#: ../twentyseventeen/template-parts/post/content.php:57
+#: ../twentyseventeen/template-parts/post/content-video.php:83
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: ../twentyseventeen/inc/customizer.php:64
+msgid "Custom"
+msgstr ""
+
+#: ../twentyseventeen/inc/customizer.php:63
+msgid "Dark"
+msgstr ""
+
+#: ../twentyseventeen/inc/custom-header.php:56
+msgid "Default Header Image"
+msgstr ""
+
+#. %s: Post title.
+#: ../twentyseventeen/inc/template-tags.php:117
+#, php-format
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: ../twentyseventeen/functions.php:483
+msgid "Expand child menu"
+msgstr ""
+
+#: ../twentyseventeen/template-parts/footer/footer-widgets.php:18
+msgid "Footer"
+msgstr ""
+
+#: ../twentyseventeen/functions.php:350
+msgid "Footer 1"
+msgstr ""
+
+#: ../twentyseventeen/functions.php:362
+msgid "Footer 2"
+msgstr ""
+
+#: ../twentyseventeen/footer.php:26
+msgid "Footer Social Links Menu"
+msgstr ""
+
+#. %d: The front page section number.
+#: ../twentyseventeen/inc/customizer.php:142
+#, php-format
+msgid "Front Page Section %d Content"
+msgstr ""
+
+#. %s: The section ID.
+#: ../twentyseventeen/inc/template-tags.php:152
+#, php-format
+msgid "Front Page Section %s Placeholder"
+msgstr ""
+
+#: ../twentyseventeen/template-parts/footer/site-info.php:18
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: ../twentyseventeen/404.php:24
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: ../twentyseventeen/template-parts/post/content-none.php:33
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../twentyseventeen/searchform.php:17
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#. If there are characters in your language that are not supported
+#. by Libre Franklin, translate this to 'off'. Do not translate into your own language.
+#: ../twentyseventeen/functions.php:290
+msgctxt "Libre Franklin font: on or off"
+msgid "on"
+msgstr ""
+
+#: ../twentyseventeen/inc/customizer.php:62
+msgid "Light"
+msgstr ""
+
+#: ../twentyseventeen/template-parts/navigation/navigation-top.php:17
+msgid "Menu"
+msgstr ""
+
+#: ../twentyseventeen/comments.php:72 ../twentyseventeen/single.php:34
+msgid "Next"
+msgstr ""
+
+#: ../twentyseventeen/archive.php:49 ../twentyseventeen/index.php:53
+#: ../twentyseventeen/search.php:51
+msgid "Next page"
+msgstr ""
+
+#: ../twentyseventeen/single.php:34
+msgid "Next Post"
+msgstr ""
+
+#: ../twentyseventeen/search.php:26
+#: ../twentyseventeen/template-parts/post/content-none.php:17
+msgid "Nothing Found"
+msgstr ""
+
+#: ../twentyseventeen/inc/customizer.php:111
+#: ../twentyseventeen/inc/customizer.php:170
+msgid "One Column"
+msgstr ""
+
+#: ../twentyseventeen/404.php:21
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../twentyseventeen/archive.php:50 ../twentyseventeen/index.php:54
+#: ../twentyseventeen/search.php:52
+msgid "Page"
+msgstr ""
+
+#: ../twentyseventeen/inc/customizer.php:106
+msgid "Page Layout"
+msgstr ""
+
+#: ../twentyseventeen/template-parts/page/content-page.php:26
+#: ../twentyseventeen/template-parts/post/content-gallery.php:78
+#: ../twentyseventeen/template-parts/post/content-audio.php:91
+#: ../twentyseventeen/template-parts/post/content-image.php:68
+#: ../twentyseventeen/template-parts/post/content.php:64
+#: ../twentyseventeen/template-parts/post/content-video.php:90
+msgid "Pages:"
+msgstr ""
+
+#: ../twentyseventeen/inc/custom-header.php:128
+msgid "Pause background video"
+msgstr ""
+
+#: ../twentyseventeen/searchform.php:19
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: ../twentyseventeen/inc/custom-header.php:127
+msgid "Play background video"
+msgstr ""
+
+#: ../twentyseventeen/inc/icon-functions.php:44
+msgid "Please define an SVG icon filename."
+msgstr ""
+
+#: ../twentyseventeen/inc/icon-functions.php:39
+msgid "Please define default parameters in the form of an array."
+msgstr ""
+
+#: ../twentyseventeen/index.php:27
+msgid "Posts"
+msgstr ""
+
+#: ../twentyseventeen/comments.php:71 ../twentyseventeen/single.php:33
+msgid "Previous"
+msgstr ""
+
+#: ../twentyseventeen/archive.php:48 ../twentyseventeen/index.php:52
+#: ../twentyseventeen/search.php:50
+msgid "Previous page"
+msgstr ""
+
+#: ../twentyseventeen/single.php:33
+msgid "Previous Post"
+msgstr ""
+
+#. %s: WordPress
+#: ../twentyseventeen/template-parts/footer/site-info.php:21
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#. %s: Post editor URL.
+#: ../twentyseventeen/template-parts/post/content-none.php:27
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr ""
+
+#: ../twentyseventeen/comments.php:62
+msgid "Reply"
+msgstr ""
+
+#: ../twentyseventeen/template-parts/header/site-branding.php:34
+#: ../twentyseventeen/template-parts/navigation/navigation-top.php:31
+msgid "Scroll down to content"
+msgstr ""
+
+#. Search query.
+#: ../twentyseventeen/search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../twentyseventeen/inc/customizer.php:143
+msgid ""
+"Select pages to feature in each area from the dropdowns. Add an image to a "
+"section by setting a featured image in the page editor. Empty sections will "
+"not be displayed."
+msgstr ""
+
+#: ../twentyseventeen/header.php:28
+msgid "Skip to content"
+msgstr ""
+
+#: ../twentyseventeen/functions.php:65 ../twentyseventeen/functions.php:216
+msgid "Social Links Menu"
+msgstr ""
+
+#: ../twentyseventeen/search.php:59
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../twentyseventeen/searchform.php:20
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: ../twentyseventeen/inc/template-tags.php:89
+msgid "Tags"
+msgstr ""
+
+#: ../twentyseventeen/inc/customizer.php:89
+msgid "Theme Options"
+msgstr ""
+
+#: ../twentyseventeen/functions.php:181
+msgctxt "Theme starter content"
+msgid "Coffee"
+msgstr ""
+
+#: ../twentyseventeen/functions.php:173
+msgctxt "Theme starter content"
+msgid "Espresso"
+msgstr ""
+
+#: ../twentyseventeen/functions.php:177
+msgctxt "Theme starter content"
+msgid "Sandwich"
+msgstr ""
+
+#: ../twentyseventeen/functions.php:64 ../twentyseventeen/functions.php:205
+#: ../twentyseventeen/template-parts/navigation/navigation-top.php:12
+msgid "Top Menu"
+msgstr ""
+
+#. %s: The current WordPress version.
+#: ../twentyseventeen/inc/back-compat.php:40
+#: ../twentyseventeen/inc/back-compat.php:54
+#: ../twentyseventeen/inc/back-compat.php:73
+#, php-format
+msgid ""
+"Twenty Seventeen requires at least WordPress version 4.7. You are running "
+"version %s. Please upgrade and try again."
+msgstr ""
+
+#: ../twentyseventeen/inc/customizer.php:112
+#: ../twentyseventeen/inc/customizer.php:171
+msgid "Two Column"
+msgstr ""
+
+#: ../twentyseventeen/inc/customizer.php:109
+msgid ""
+"When the two-column layout is assigned, the page title is in one column and "
+"content is in the other."
+msgstr ""
