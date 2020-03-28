@@ -1,0 +1,26 @@
+{
+  "name": "@alenredek/wordpress-docker",
+  "version": "1.0.0",
+  "description": "WordPress Theme Framework",
+  "main": "index.js",
+  "engines": {
+    "npm": ">=2.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlenRedek/wordpress-docker.git"
+  },
+  "keywords": [
+    "wordpress",
+    "docker"
+  ],
+  "author": "Alen Branko Redek",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/AlenRedek/wordpress-docker/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  }
+}
