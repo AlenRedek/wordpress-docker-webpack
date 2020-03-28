@@ -3,7 +3,7 @@ const browserSync = require("browser-sync").create();
 
 function watch() {
 	browserSync.init({
-		"proxy": "http://localhost",
+		"proxy": "http://localhost:8000",
 		"port": 8001,
 	});
 
