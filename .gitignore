@@ -1,0 +1,6 @@
+# Track themes folder
+wp-content/*
+!wp-content/themes
+
+# Ignore dependencies
+wp-content/themes/*/node_modules/
