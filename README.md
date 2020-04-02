@@ -1,14 +1,11 @@
-# Installation
+# Setup
 
-## GIT
+## Installation
 - Clone the repository `$ git clone <repository>`
-
-## Rsync
-- Download folders plugins / uploads `$ rsync -Phvrt <user>@<host>:/path/to/wordpress/wp-content/plugins|uploads/ wp-content/plugins|uploads/`
-- Use FTP client if you don't have the SSH access
+- Download plugins & uploads folders from the remote `$ rsync -Phvrt <user>@<host>:/path/to/wordpress/wp-content/plugins|uploads/ wp-content/plugins|uploads/`
 
 ## Environment constants
-- Update `.env` file according to your needs
+- Update `.env` file
 
 ## Docker
 - Build an image & run Docker container `$ docker-compose up`
@@ -20,17 +17,17 @@
 
 ## Database
 - Navigate to [http://localhost:8080](http://localhost:8080)
-- Create a new database and import the SQL dump file.
+- Create a new database and import the SQL dump file
 
 ## Website
 - Navigate to [http://localhost:8000](http://localhost:8000)
 
-# Developing with Gulp and Browser Sync
+# Development
 
 ## Gulp
 - Install Gulp globally `$ npm install -g gulp`
 
 ## Browser Sync
-- Navigate to theme folder
+- Navigate to the theme folder
 - Install dependencies `$ npm install`
 - Run `$ gulp`
