@@ -16,11 +16,11 @@
 - Delete all persisted data within containers `$ docker-compose down --volume`
 
 ## Database
-- Navigate to (http://localhost:8080)
+- Navigate to [http://localhost:8080](http://localhost:8080)
 - Create a new database and import the SQL dump file
 
 ## Website
-- Navigate to [http://localhost:8000]
+- Navigate to [http://localhost:8000](http://localhost:8000)
 
 # Development
 
@@ -35,4 +35,4 @@
 ## PHP Coding Standards Fixer
 - Install VS Code extension `php cs fixer`
 - Configure the extension to execute on save
-- For more info please refer to [https://github.com/FriendsOfPHP/PHP-CS-Fixer]
+- For more info please refer to [https://github.com/FriendsOfPHP/PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
