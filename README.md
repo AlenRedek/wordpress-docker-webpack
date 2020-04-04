@@ -16,7 +16,7 @@
 - Delete all persisted data within containers `$ docker-compose down --volume`
 
 ## Database
-- Navigate to [http://localhost:8080]
+- Navigate to (http://localhost:8080)
 - Create a new database and import the SQL dump file
 
 ## Website
