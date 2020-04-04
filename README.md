@@ -33,6 +33,6 @@
 - Run `$ gulp`
 
 ## PHP Coding Standards Fixer
-- Install VS Code extension `php cs fixer`
+- Install `php cs fixer` extension for your IDE
 - Configure the extension to execute on save
 - For more info please refer to [https://github.com/FriendsOfPHP/PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
