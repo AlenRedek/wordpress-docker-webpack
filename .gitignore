@@ -1,6 +1,8 @@
-# Track themes folder
+# Track twentyseventeen folder only
 wp-content/*
-!wp-content/themes/twentyseventeen
+!wp-content/themes/
+wp-content/themes/*
+!wp-content/themes/twentyseventeen*
 
 # Ignore dependencies
 wp-content/themes/*/node_modules/
