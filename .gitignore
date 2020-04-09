@@ -6,3 +6,8 @@ wp-content/themes/*
 
 # Ignore dependencies
 wp-content/themes/*/node_modules/
+
+# Ignore OS files
+Thumbs.db
+desktop.ini
+.DS_Store
