@@ -2,7 +2,7 @@
   "name": "@alenredek/wordpress-docker-webpack",
   "version": "1.0.0",
   "description": "Automated WordPress local development with Docker, Webpack, Babel and LiveReload",
-  "author": "Alen Branko Redek",
+  "author": "Alen Branko Redek <alen@redek.me> (https://www.redek.me)",
   "license": "GPL-2.0-or-later",
   "keywords": [
     "wordpress",
@@ -15,7 +15,7 @@
     "prettier",
     "sass"
   ],
-  "homepage": "https://github.com/AlenRedek/wordpress-docker-webpack/",
+  "homepage": "https://github.com/AlenRedek/wordpress-docker-webpack",
   "repository": "git+https://github.com/AlenRedek/wordpress-docker-webpack.git",
   "bugs": {
     "url": "https://github.com/AlenRedek/wordpress-docker-webpack/issues"
