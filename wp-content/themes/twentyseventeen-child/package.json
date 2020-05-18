@@ -24,6 +24,9 @@
     "node": ">=10.0.0",
     "npm": ">=6.0.0"
   },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
   "devDependencies": {
     "@wordpress/scripts": "^9.1.0",
     "autoprefixer": "^9.8.0",
