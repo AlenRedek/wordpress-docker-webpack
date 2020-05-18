@@ -25,7 +25,10 @@
     "npm": ">=6.0.0"
   },
   "devDependencies": {
-    "@wordpress/scripts": "^9.1.0"
+    "@wordpress/scripts": "^9.1.0",
+    "css-loader": "^3.5.3",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
   },
   "scripts": {
     "build": "wp-scripts build --config webpack.config.js",

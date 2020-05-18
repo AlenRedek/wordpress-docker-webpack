@@ -12,4 +12,22 @@ module.exports = {
     filename: '[name]/[name].js',
     path: path.resolve(process.cwd(), 'assets/build'),
   },
+  module: {
+    ...defaultConfig.module,
+    rules: [
+      ...defaultConfig.module.rules,
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            },
+          },
+          'sass-loader',
+        ],
+      },
+    ],
+  },
 };
