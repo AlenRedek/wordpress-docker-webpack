@@ -1,1 +1,0 @@
-import './components/front-jquery';
