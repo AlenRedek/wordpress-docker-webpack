@@ -1,3 +1,8 @@
+const isProduction = process.env.NODE_ENV === 'production';
+
 module.exports = {
-  plugins: [require('autoprefixer'), require('cssnano')],
+  plugins: [
+    require('autoprefixer'),
+    ...(isProduction ? [require('cssnano')] : []),
+  ],
 };
