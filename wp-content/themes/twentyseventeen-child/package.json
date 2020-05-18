@@ -26,9 +26,12 @@
   },
   "devDependencies": {
     "@wordpress/scripts": "^9.1.0",
+    "autoprefixer": "^9.8.0",
     "css-loader": "^3.5.3",
+    "cssnano": "^4.1.10",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2"
   },
   "scripts": {
