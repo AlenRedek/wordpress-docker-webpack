@@ -13,6 +13,10 @@ module.exports = {
     filename: '[name]/[name].js',
     path: path.resolve(process.cwd(), 'assets/build'),
   },
+  resolve: {
+    ...defaultConfig.resolve,
+    extensions: ['.js', '.scss'],
+  },
   module: {
     ...defaultConfig.module,
     rules: [
