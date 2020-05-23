@@ -1,3 +1,2 @@
 import './styles';
-
 import './example';
