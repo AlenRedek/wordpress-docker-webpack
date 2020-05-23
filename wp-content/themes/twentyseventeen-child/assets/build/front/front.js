@@ -95,7 +95,8 @@
 
 /* global jQuery */
 var $j = jQuery.noConflict();
-$j(function () {// Code using $j as jQuery alias
+$j(function () {
+  $j('.site-title a').text('example');
 });
 
 /***/ }),

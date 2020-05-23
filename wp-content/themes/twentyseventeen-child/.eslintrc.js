@@ -6,5 +6,6 @@ module.exports = {
   extends: [require.resolve('@wordpress/scripts/config/.eslintrc')],
   rules: {
     'prettier/prettier': ['error', defaultPrettierConfig],
+    'prefer-arrow-callback': 'error',
   },
 };

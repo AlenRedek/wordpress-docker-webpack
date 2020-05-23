@@ -2,6 +2,6 @@
 
 const $j = jQuery.noConflict();
 
-$j(function() {
-  // Code using $j as jQuery alias
+$j(() => {
+  $j('.site-title a').text('example');
 });
