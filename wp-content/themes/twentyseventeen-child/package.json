@@ -38,6 +38,7 @@
     "sass-loader": "^8.0.2"
   },
   "scripts": {
+    "analyze": "WP_BUNDLE_ANALYZER=true yarn build",
     "build": "wp-scripts build --config webpack.config.js",
     "check-engines": "wp-scripts check-engines",
     "check-licenses": "wp-scripts check-licenses --prod",
