@@ -90,11 +90,15 @@
 /*!*************************************!*\
   !*** ./assets/src/front/example.js ***!
   \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* global jQuery */
-var $j = jQuery.noConflict();
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "jquery");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+var $j = jquery__WEBPACK_IMPORTED_MODULE_0__["jQuery"].noConflict();
 $j(function () {
   $j('.site-title a').text('example');
 });
@@ -111,7 +115,6 @@ $j(function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _example__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./example */ "./assets/src/front/example.js");
-/* harmony import */ var _example__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_example__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles */ "./assets/src/front/styles.scss");
 /* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles__WEBPACK_IMPORTED_MODULE_1__);
 
@@ -127,6 +130,17 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "jquery":
+/*!**********************************!*\
+  !*** external {"this":"jQuery"} ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function() { module.exports = this["jQuery"]; }());
 
 /***/ })
 

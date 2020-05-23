@@ -28,6 +28,7 @@
     "extends @wordpress/browserslist-config"
   ],
   "devDependencies": {
+    "@types/jquery": "1.10.35",
     "@wordpress/scripts": "^9.1.0",
     "autoprefixer": "^9.8.0",
     "css-loader": "^3.5.3",
