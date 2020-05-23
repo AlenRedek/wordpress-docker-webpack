@@ -17,7 +17,8 @@ services:
       - ./php.ini:/usr/local/etc/php/conf.d/uploads.ini
       - ./wp-config.php:/var/www/html/wp-config.php
       - ./wp-content:/var/www/html/wp-content
-    env_file: .env
+    env_file:
+      - ./.env
 
   db:
     image: mariadb
