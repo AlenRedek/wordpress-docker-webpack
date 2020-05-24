@@ -3,9 +3,11 @@
     "source.fixAll.eslint": true
   },
   "editor.formatOnSave": true,
+  "editor.tabSize": 2,
   "eslint.workingDirectories": [
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "scss.validate": false
 }
