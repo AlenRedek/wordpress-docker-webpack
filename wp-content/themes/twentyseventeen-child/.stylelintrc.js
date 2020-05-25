@@ -3,5 +3,6 @@ module.exports = {
   rules: {
     indentation: 2,
     'no-empty-source': null,
+    'string-quotes': 'single',
   },
 };
