@@ -22,7 +22,7 @@
   },
   "engines": {
     "node": ">=10.0.0",
-    "npm": ">=6.0.0"
+    "yarn": ">= 1.0.0"
   },
   "browserslist": [
     "extends @wordpress/browserslist-config"
@@ -41,12 +41,12 @@
     "sass-loader": "^8.0.2"
   },
   "scripts": {
-    "analyze": "WP_BUNDLE_ANALYZER=true yarn build",
+    "analyze": "export WP_BUNDLE_ANALYZER=true && yarn build",
     "build": "wp-scripts build --config webpack.config.js",
     "check-licenses": "wp-scripts check-licenses --prod",
-    "lint:style": "wp-scripts lint-style",
     "lint:js": "wp-scripts lint-js",
     "lint:pkg-json": "wp-scripts lint-pkg-json",
-    "start": "wp-scripts start --config webpack.config.js",
+    "lint:style": "wp-scripts lint-style",
+    "start": "wp-scripts start --config webpack.config.js"
   }
 }
