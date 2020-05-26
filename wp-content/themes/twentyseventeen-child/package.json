@@ -46,9 +46,28 @@
     "analyze": "export WP_BUNDLE_ANALYZER=true && yarn build",
     "build": "wp-scripts build --config webpack.config.js",
     "check-licenses": "wp-scripts check-licenses --prod",
+    "format:js": "wp-scripts format-js",
     "lint:js": "wp-scripts lint-js",
     "lint:pkg-json": "wp-scripts lint-pkg-json",
     "lint:style": "wp-scripts lint-style",
     "start": "wp-scripts start --config webpack.config.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "package.json": [
+      "yarn lint:pkg-json",
+      "yarn check-licenses"
+    ],
+    "*.js": [
+      "yarn format:js",
+      "yarn lint:js"
+    ],
+    "*.scss": [
+      "yarn lint:style"
+    ]
   }
 }
