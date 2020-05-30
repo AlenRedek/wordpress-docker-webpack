@@ -1,2 +1,2 @@
 import './styles';
-import './example';
+import './example/example';
