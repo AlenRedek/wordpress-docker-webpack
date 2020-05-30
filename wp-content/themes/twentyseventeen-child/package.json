@@ -1,7 +1,7 @@
 {
   "name": "@alenredek/wordpress-docker-webpack",
   "version": "1.0.0",
-  "description": "Automated WordPress local development with Docker, Webpack, Babel and LiveReload",
+  "description": "Automated WordPress local development with Docker, Webpack, Babel and BrowserSync",
   "author": "Alen Branko Redek <alen@redek.me> (https://www.redek.me)",
   "license": "GPL-2.0-or-later",
   "keywords": [
@@ -9,7 +9,7 @@
     "docker",
     "webpack",
     "babel",
-    "livereload",
+    "browsersync",
     "esnext",
     "eslint",
     "prettier",
@@ -32,6 +32,8 @@
     "@types/lodash-es": "^4.17.3",
     "@wordpress/scripts": "^9.1.0",
     "autoprefixer": "^9.8.0",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
     "css-loader": "^3.5.3",
     "cssnano": "^4.1.10",
     "husky": "^4.2.5",
