@@ -3,18 +3,21 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const LiveReloadPlugin = require('webpack-livereload-plugin');
 const defaultConfig = require('@wordpress/scripts/config/webpack.config');
+
 const isProduction = process.env.NODE_ENV === 'production';
+const entryPath = 'assets/src';
+const outputPath = 'assets/build';
 
 module.exports = {
   ...defaultConfig,
   entry: {
-    admin: path.resolve(process.cwd(), 'assets/src/admin', 'index.js'),
-    front: path.resolve(process.cwd(), 'assets/src/front', 'index.js'),
+    admin: path.resolve(process.cwd(), `${entryPath}/admin`, 'index.js'),
+    front: path.resolve(process.cwd(), `${entryPath}/front`, 'index.js'),
   },
   output: {
     // [name] is an alias for the entry point
     filename: '[name]/[name].js',
-    path: path.resolve(process.cwd(), 'assets/build'),
+    path: path.resolve(process.cwd(), outputPath),
   },
   resolve: {
     ...defaultConfig.resolve,
@@ -41,7 +44,7 @@ module.exports = {
     ],
   },
   plugins: [
-    // Replace LiveReload with BrowserSync in order to watch PHP files
+    // Replace LiveReload with BrowserSync in order to watch the PHP files
     ...defaultConfig.plugins.filter(
       (plugin) => !(plugin instanceof LiveReloadPlugin),
     ),
@@ -49,7 +52,11 @@ module.exports = {
       new BrowserSyncPlugin(
         {
           proxy: 'http://localhost:8000',
-          files: ['**/*.php'],
+          files: [
+            '**/*.php',
+            `${outputPath}/**/*.js`,
+            `${outputPath}/**/*.css`,
+          ],
         },
         // Prevent BrowserSync from reloading the page and let Webpack do it
         { reload: false },
