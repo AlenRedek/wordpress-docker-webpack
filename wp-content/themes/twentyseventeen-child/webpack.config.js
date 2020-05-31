@@ -1,9 +1,16 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const LiveReloadPlugin = require('webpack-livereload-plugin');
-const defaultConfig = require('@wordpress/scripts/config/webpack.config');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const defaultConfig = require('@wordpress/scripts/config/webpack.config');
+const dotenv = require('dotenv');
+
+// Add .env constants to process.env
+dotenv.config({ path: '../../../.env' });
+
+const siteUrl = process.env.WP_SITEURL;
 const isProduction = process.env.NODE_ENV === 'production';
 const entryPath = 'assets/src';
 const outputPath = 'assets/build';
@@ -51,7 +58,7 @@ module.exports = {
     !isProduction &&
       new BrowserSyncPlugin(
         {
-          proxy: 'http://localhost:8000',
+          proxy: siteUrl,
           files: [
             '**/*.php',
             `${outputPath}/**/*.js`,
