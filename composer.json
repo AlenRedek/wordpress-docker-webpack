@@ -1,0 +1,14 @@
+{
+    "name": "alenredek/wordpress-docker-webpack",
+    "description": "Lint PHP files",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "wp-coding-standards/wpcs": "^2.3"
+    },
+    "scripts": {
+        "format": "vendor/bin/phpcbf --standard=phpcs.xml",
+        "lint": "vendor/bin/phpcs --standard=phpcs.xml"
+    }
+}
