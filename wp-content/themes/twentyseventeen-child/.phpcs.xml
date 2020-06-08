@@ -18,8 +18,7 @@
 	<arg name="report" value="summary"/>
 	<arg value="s"/>
 
-	<file>./wp-config.php</file>
-	<file>./wp-content/themes/twentyseventeen-child/</file>
+	<file>.</file>
 	<exclude-pattern>*/build/*</exclude-pattern>
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>

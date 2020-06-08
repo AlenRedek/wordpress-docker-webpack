@@ -8,7 +8,7 @@
         "wp-coding-standards/wpcs": "^2.3"
     },
     "scripts": {
-        "format": "vendor/bin/phpcbf --standard=phpcs.xml",
-        "lint": "vendor/bin/phpcs --standard=phpcs.xml"
+        "format": "vendor/bin/phpcbf --standard=.phpcs.xml",
+        "lint": "vendor/bin/phpcs --standard=.phpcs.xml"
     }
 }

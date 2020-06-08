@@ -9,5 +9,7 @@
       "mode": "auto"
     }
   ],
+  "phpSniffer.executablesFolder": "./wp-content/themes/twentyseventeen-child/vendor/bin",
+  "phpSniffer.standard": "./wp-content/themes/twentyseventeen-child/.phpcs.xml",
   "scss.validate": false
 }
