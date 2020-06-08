@@ -15,7 +15,6 @@
  	<arg name="colors"/>
 	<arg name="extensions" value="php"/>
 	<arg name="parallel" value="8"/>
-	<arg name="report" value="summary"/>
 	<arg value="s"/>
 
 	<file>.</file>
@@ -29,13 +28,12 @@
 	#############################################################################
 	-->
 	<rule ref="WordPress">
-		<exclude name="Generic.Formatting.MultipleStatementAlignment.NotSameWarning"/>
 		<exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
-		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket"/>
-		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket"/>
-		<exclude name="Squiz.Commenting.FileComment.Missing"/>
-		<exclude name="Squiz.Commenting.FunctionComment.Missing"/>
 		<exclude name="WordPress.WhiteSpace.PrecisionAlignment"/>
+	</rule>
+
+	<rule ref="Squiz.Commenting.FileComment.Missing">
+		<exclude-pattern>./functions.php</exclude-pattern>
 	</rule>
 
 	<!--
