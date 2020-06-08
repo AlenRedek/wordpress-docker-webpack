@@ -30,11 +30,12 @@
 	-->
 	<rule ref="WordPress">
 		<exclude name="Generic.Formatting.MultipleStatementAlignment.NotSameWarning"/>
+		<exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket"/>
 		<exclude name="Squiz.Commenting.FileComment.Missing"/>
 		<exclude name="Squiz.Commenting.FunctionComment.Missing"/>
-		<exclude name="WordPress.WhiteSpace.PrecisionAlignment.Found"/>
+		<exclude name="WordPress.WhiteSpace.PrecisionAlignment"/>
 	</rule>
 
 	<!--
@@ -45,7 +46,7 @@
 	<rule ref="Generic.WhiteSpace.ScopeIndent">
 		<properties>
 			<property name="indent" value="2"/>
-			<property name="tabIndent" value="false" />
+			<property name="tabIndent" value="false"/>
 		</properties>
 	</rule>
 
