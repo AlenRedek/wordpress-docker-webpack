@@ -12,8 +12,11 @@ function abr_admin_assets() {
 
 add_action('wp_enqueue_scripts', 'abr_front_assets');
 function abr_front_assets() {
-  wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
-  wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css');
+  $parent_style = 'parent-style';
+  $parent_theme = wp_get_theme(get_template());
+
+  wp_enqueue_style($parent_style, get_template_directory_uri() . '/style.css', array(), $parent_theme->get( 'Version' ));
+  wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ), '1.0');
 
   abr_enqueue_assets('front');
 }
