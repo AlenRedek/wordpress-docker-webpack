@@ -50,7 +50,9 @@
     "build": "wp-scripts build --config webpack.config.js",
     "check-licenses": "wp-scripts check-licenses --prod",
     "format:js": "wp-scripts format-js",
+    "format:php": "composer format:php",
     "lint:js": "wp-scripts lint-js",
+    "lint:php": "composer lint:php",
     "lint:pkg-json": "wp-scripts lint-pkg-json",
     "lint:style": "wp-scripts lint-style",
     "start": "wp-scripts start --config webpack.config.js"
@@ -68,6 +70,10 @@
     "*.js": [
       "yarn format:js",
       "yarn lint:js"
+    ],
+    "*.php": [
+      "yarn format:php",
+      "yarn lint:php"
     ],
     "*.scss": [
       "yarn lint:style"

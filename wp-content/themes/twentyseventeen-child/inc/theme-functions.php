@@ -1,8 +1,8 @@
 <?php
 /**
- * Generic theme functions
+ * Generic global functions
  *
- * @package ABR
+ * @package ABR\Global
  */
 
 /**

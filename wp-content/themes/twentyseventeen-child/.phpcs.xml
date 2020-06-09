@@ -32,10 +32,6 @@
 		<exclude name="WordPress.WhiteSpace.PrecisionAlignment"/>
 	</rule>
 
-	<rule ref="Squiz.Commenting.FileComment.Missing">
-		<exclude-pattern>./functions.php</exclude-pattern>
-	</rule>
-
 	<!--
 	#############################################################################
 	Custom RULESET

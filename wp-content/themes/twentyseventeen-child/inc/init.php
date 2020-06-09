@@ -2,7 +2,7 @@
 /**
  * Theme initialization
  *
- * @package ABR
+ * @package ABR\Global
  */
 
 /**
