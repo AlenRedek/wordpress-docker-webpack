@@ -1,26 +1,76 @@
 {
-  "name": "@alenredek/wordpress-docker",
+  "name": "@alenredek/wordpress-docker-webpack",
   "version": "1.0.0",
-  "description": "WordPress Theme Framework",
-  "main": "index.js",
-  "engines": {
-    "npm": ">=2.1.8"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AlenRedek/wordpress-docker.git"
-  },
+  "description": "Automated WordPress local development with Docker, Webpack, Babel and BrowserSync",
+  "author": "Alen Branko Redek <alen@redek.me> (https://www.redek.me)",
+  "license": "GPL-2.0-or-later",
   "keywords": [
     "wordpress",
-    "docker"
+    "docker",
+    "webpack",
+    "babel",
+    "browsersync",
+    "esnext",
+    "eslint",
+    "prettier",
+    "sass"
   ],
-  "author": "Alen Branko Redek",
-  "license": "GPL-2.0",
+  "homepage": "https://github.com/AlenRedek/wordpress-docker-webpack",
+  "repository": "git+https://github.com/AlenRedek/wordpress-docker-webpack.git",
   "bugs": {
-    "url": "https://github.com/AlenRedek/wordpress-docker/issues"
+    "url": "https://github.com/AlenRedek/wordpress-docker-webpack/issues"
   },
+  "engines": {
+    "node": ">=10.0.0",
+    "yarn": ">= 1.0.0"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
   "devDependencies": {
+    "@types/jquery": "1.10.35",
+    "@types/lodash-es": "^4.17.3",
+    "@wordpress/scripts": "^9.1.0",
+    "autoprefixer": "^9.8.0",
     "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2"
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^3.5.3",
+    "cssnano": "^4.1.10",
+    "dotenv": "^8.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.6",
+    "lodash-es": "^4.17.15",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2"
+  },
+  "scripts": {
+    "analyze": "export WP_BUNDLE_ANALYZER=true && yarn build",
+    "build": "wp-scripts build --config webpack.config.js",
+    "check-licenses": "wp-scripts check-licenses --prod",
+    "format:js": "wp-scripts format-js",
+    "lint:js": "wp-scripts lint-js",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "lint:style": "wp-scripts lint-style",
+    "start": "wp-scripts start --config webpack.config.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "package.json": [
+      "yarn lint:pkg-json",
+      "yarn check-licenses"
+    ],
+    "*.js": [
+      "yarn format:js",
+      "yarn lint:js"
+    ],
+    "*.scss": [
+      "yarn lint:style"
+    ]
   }
 }

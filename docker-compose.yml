@@ -1,4 +1,4 @@
-version: '3.7'
+version: "3.7"
 
 volumes:
   db_data:
@@ -14,10 +14,11 @@ services:
     ports:
       - ${WP_PORT}:80
     volumes:
+      - ./php.ini:/usr/local/etc/php/conf.d/uploads.ini
       - ./wp-config.php:/var/www/html/wp-config.php
       - ./wp-content:/var/www/html/wp-content
-      - ./php.ini:/usr/local/etc/php/conf.d/uploads.ini
-    env_file: .env
+    env_file:
+      - ./.env
 
   db:
     image: mariadb
