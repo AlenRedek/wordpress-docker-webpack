@@ -50,9 +50,9 @@
     "build": "wp-scripts build --config webpack.config.js",
     "check-licenses": "wp-scripts check-licenses --prod",
     "format:js": "wp-scripts format-js",
-    "format:php": "composer format:php",
+    "format:php": "vendor/bin/phpcbf --report-summary --report-source",
     "lint:js": "wp-scripts lint-js",
-    "lint:php": "composer lint:php",
+    "lint:php": "vendor/bin/phpcs",
     "lint:pkg-json": "wp-scripts lint-pkg-json",
     "lint:style": "wp-scripts lint-style",
     "start": "wp-scripts start --config webpack.config.js"
