@@ -50,7 +50,7 @@
     "build": "wp-scripts build --config webpack.config.js",
     "check-licenses": "wp-scripts check-licenses --prod",
     "format:js": "wp-scripts format-js",
-    "format:php": "vendor/bin/phpcbf --report-summary --report-source",
+    "format:php": "vendor/bin/phpcbf; if [ $? -eq 1 ]; then exit 0; fi;",
     "lint:js": "wp-scripts lint-js",
     "lint:php": "vendor/bin/phpcs",
     "lint:pkg-json": "wp-scripts lint-pkg-json",
