@@ -2,7 +2,7 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "junstyle.php-cs-fixer",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "wongjn.php-sniffer"
   ]
 }

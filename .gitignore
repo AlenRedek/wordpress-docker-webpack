@@ -5,6 +5,7 @@ wp-content/themes/*
 !wp-content/themes/twentyseventeen*
 
 # Ignore dependencies
+vendor
 wp-content/themes/*/node_modules/
 
 # Ignore OS files
