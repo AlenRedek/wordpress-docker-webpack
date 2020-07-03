@@ -32,6 +32,18 @@
 		<exclude name="WordPress.WhiteSpace.PrecisionAlignment"/>
 	</rule>
 
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array" value="twentyseventeen-child"/>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array" value="abr" />
+		</properties>
+	</rule>
+
 	<!--
 	#############################################################################
 	Custom RULESET

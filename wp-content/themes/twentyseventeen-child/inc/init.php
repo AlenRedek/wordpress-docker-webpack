@@ -6,16 +6,6 @@
  */
 
 /**
- * Theme setup
- *
- * @return void
- */
-function abr_theme_setup() {
-  load_theme_textdomain( 'twentyseventeen-child', get_stylesheet_directory() . '/languages' );
-}
-add_action( 'after_setup_theme', 'abr_theme_setup' );
-
-/**
  * Enqueue admin assets
  *
  * @return void

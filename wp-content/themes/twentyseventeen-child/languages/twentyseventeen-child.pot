@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Twenty Seventeen Child\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-28 19:17+0000\n"
+"POT-Creation-Date: 2020-06-21 18:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -20,11 +20,7 @@ msgid "Twenty Seventeen Child"
 msgstr ""
 
 #. Description of the theme
-msgid "Child theme for Twenty Seventeen."
-msgstr ""
-
-#. URI of the theme
-msgid "https://wordpress.org/themes/twentyseventeen/"
+msgid "The custom theme using the parent theme Twenty Seventeen."
 msgstr ""
 
 #. Author of the theme
