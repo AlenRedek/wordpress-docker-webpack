@@ -27,10 +27,8 @@
 	WordPress RULESET
 	#############################################################################
 	-->
-	<rule ref="WordPress">
-		<exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
-		<exclude name="WordPress.WhiteSpace.PrecisionAlignment"/>
-	</rule>
+
+	<rule ref="WordPress"/>
 
 	<rule ref="WordPress.WP.I18n">
 		<properties>
@@ -41,18 +39,6 @@
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<property name="prefixes" type="array" value="abr" />
-		</properties>
-	</rule>
-
-	<!--
-	#############################################################################
-	Custom RULESET
-	#############################################################################
-	-->
-	<rule ref="Generic.WhiteSpace.ScopeIndent">
-		<properties>
-			<property name="indent" value="2"/>
-			<property name="tabIndent" value="false"/>
 		</properties>
 	</rule>
 
