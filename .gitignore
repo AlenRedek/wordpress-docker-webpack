@@ -5,8 +5,8 @@ wp-content/themes/*
 !wp-content/themes/twentyseventeen*
 
 # Ignore dependencies
-vendor
 wp-content/themes/*/node_modules/
+wp-content/themes/*/vendor/
 
 # Ignore OS files
 Thumbs.db
