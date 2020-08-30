@@ -6,6 +6,17 @@
  */
 
 /**
+ * Theme setup
+ *
+ * @return void
+ */
+function abr_theme_setup() {
+	// Support string translations when doing AJAX requests (admin-ajax).
+	load_theme_textdomain( 'twentyseventeen-child', get_stylesheet_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'abr_theme_setup' );
+
+/**
  * Enqueue admin assets
  *
  * @return void
