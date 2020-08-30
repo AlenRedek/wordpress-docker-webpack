@@ -68,7 +68,6 @@
       "yarn check-licenses"
     ],
     "*.js": [
-      "yarn format:js",
       "yarn lint:js"
     ],
     "*.php": [
