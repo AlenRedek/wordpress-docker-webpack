@@ -40,6 +40,11 @@
 - Start watching for the file changes `$ yarn start`
 - BrowserSync is listening on [http://localhost:3000](http://localhost:3000)
 
+## iTermocil
+
+- Alternatively, start the project by executing the specified commands `$ itermocil`
+- Requires iTerm2 and iTermocil plugin
+
 ## VS Code
 
 - `.vscode/extensions.json` contains the list of recommended extensions (ESLint, StyleLint, Prettier, PHPCS)

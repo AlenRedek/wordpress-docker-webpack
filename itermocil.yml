@@ -1,0 +1,6 @@
+windows:
+  - name: wordpress-docker-webpack
+    layout: even-horizontal
+    panes:
+      - docker-compose up
+      - cd wp-content/themes/twentyseventeen-child && yarn start
