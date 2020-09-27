@@ -3,4 +3,4 @@ windows:
     layout: even-horizontal
     panes:
       - docker-compose up
-      - cd wp-content/themes/twentyseventeen-child && yarn start
+      - cd wp-content/themes/redex && yarn start

@@ -1,9 +1,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Twenty Seventeen Child\n"
+"Project-Id-Version: Redex\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-21 18:06+0000\n"
+"POT-Creation-Date: 2020-09-27 16:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -13,15 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.3.1; wp-5.3.2"
-
-#. Name of the theme
-msgid "Twenty Seventeen Child"
-msgstr ""
-
-#. Description of the theme
-msgid "The custom theme using the parent theme Twenty Seventeen."
-msgstr ""
+"X-Loco-Version: 2.3.1; wp-5.5"
 
 #. Author of the theme
 msgid "Alen Branko Redek"
@@ -29,4 +21,12 @@ msgstr ""
 
 #. Author URI of the theme
 msgid "https://www.redek.me/"
+msgstr ""
+
+#. Name of the theme
+msgid "Redex"
+msgstr ""
+
+#. Description of the theme
+msgid "The custom theme using the parent theme Twenty Seventeen."
 msgstr ""

@@ -1,7 +1,7 @@
 {
   "name": "@alenredek/wordpress-docker-webpack",
   "version": "1.0.0",
-  "description": "Automated WordPress local development with Docker, Webpack, Babel and BrowserSync",
+  "description": "Automated WordPress local development with Docker, Webpack, Babel, linters, and BrowserSync",
   "author": "Alen Branko Redek <alen@redek.me> (https://www.redek.me)",
   "license": "GPL-2.0-or-later",
   "keywords": [

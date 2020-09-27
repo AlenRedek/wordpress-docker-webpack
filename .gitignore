@@ -1,11 +1,11 @@
-# Track twentyseventeen-child folder only
+# Track theme folder only
 wp-content/*
 !wp-content/themes/
 wp-content/themes/*
-!wp-content/themes/twentyseventeen-child
+!wp-content/themes/redex/
 
 # Ignore dependencies
-wp-content/themes/*/assets/build/
+wp-content/themes/**/build/
 wp-content/themes/*/node_modules/
 wp-content/themes/*/vendor/
 
