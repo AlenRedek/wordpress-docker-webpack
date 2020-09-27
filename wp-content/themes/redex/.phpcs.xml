@@ -27,18 +27,24 @@
 	WordPress RULESET
 	#############################################################################
 	-->
+	<config name="minimum_supported_wp_version" value="5.0"/>
 
 	<rule ref="WordPress"/>
 
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="array" value="redex"/>
+			<property name="text_domain" type="array">
+				<element value="redex"/>
+			</property>
 		</properties>
 	</rule>
 
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
-			<property name="prefixes" type="array" value="rdx" />
+			<property name="prefixes" type="array">
+				<element value="redex"/>
+				<element value="rdx"/>
+			</property>
 		</properties>
 	</rule>
 
