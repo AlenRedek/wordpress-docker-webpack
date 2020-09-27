@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./assets/src/front/styles.scss"],"names":[],"mappings":"AAAA;AACA,qBAAqB","file":"front/front.css","sourcesContent":[".site-title {\n  font-style: italic; }\n"],"sourceRoot":""}
