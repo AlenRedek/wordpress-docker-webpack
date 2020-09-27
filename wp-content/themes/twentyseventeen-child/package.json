@@ -9,11 +9,13 @@
     "docker",
     "webpack",
     "babel",
-    "browsersync",
     "esnext",
     "eslint",
+    "stylelint",
     "prettier",
-    "sass"
+    "phpcs",
+    "sass",
+    "browsersync"
   ],
   "homepage": "https://github.com/AlenRedek/wordpress-docker-webpack",
   "repository": "git+https://github.com/AlenRedek/wordpress-docker-webpack.git",
@@ -30,25 +32,19 @@
   "devDependencies": {
     "@types/jquery": "1.10.35",
     "@types/lodash-es": "^4.17.3",
-    "@wordpress/scripts": "^9.1.0",
-    "autoprefixer": "^9.8.0",
+    "@wordpress/scripts": "^12.2.1",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
-    "css-loader": "^3.5.3",
-    "cssnano": "^4.1.10",
     "dotenv": "^8.2.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.6",
     "lodash-es": "^4.17.15",
-    "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.14.1",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^8.0.2",
     "stylelint-config-prettier": "^8.0.2"
   },
   "scripts": {
-    "analyze": "export WP_BUNDLE_ANALYZER=true && yarn build",
-    "build": "wp-scripts build --config webpack.config.js",
+    "analyze": "yarn build --webpack-bundle-analyzer",
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
     "check-licenses": "wp-scripts check-licenses --prod",
     "format:js": "wp-scripts format-js",
     "format:php": "vendor/bin/phpcbf",
@@ -56,7 +52,8 @@
     "lint:php": "vendor/bin/phpcs",
     "lint:pkg-json": "wp-scripts lint-pkg-json",
     "lint:style": "wp-scripts lint-style",
-    "start": "wp-scripts start --config webpack.config.js"
+    "packages-update": "wp-scripts packages-update",
+    "start": "wp-scripts start"
   },
   "husky": {
     "hooks": {
@@ -65,8 +62,9 @@
   },
   "lint-staged": {
     "package.json": [
-      "yarn lint:pkg-json",
-      "yarn check-licenses"
+      "yarn check-engines",
+      "yarn check-licenses",
+      "yarn lint:pkg-json"
     ],
     "*.js": [
       "yarn lint:js"

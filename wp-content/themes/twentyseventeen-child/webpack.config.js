@@ -1,21 +1,18 @@
-const path = require('path');
-
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const LiveReloadPlugin = require('webpack-livereload-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
 const defaultConfig = require('@wordpress/scripts/config/webpack.config');
 const dotenv = require('dotenv');
+const path = require('path');
 
 // Add .env constants to process.env
 dotenv.config({ path: '../../../.env' });
 
-const siteUrl = process.env.WP_SITEURL;
 const isProduction = process.env.NODE_ENV === 'production';
+const siteUrl = process.env.WP_SITEURL;
+
 const entryPath = 'assets/src';
 const outputPath = 'assets/build';
-
-module.exports = {
+const config = {
   ...defaultConfig,
   entry: {
     admin: path.resolve(process.cwd(), `${entryPath}/admin`, 'index.js'),
@@ -23,32 +20,12 @@ module.exports = {
   },
   output: {
     // [name] is an alias for the entry point
-    filename: '[name]/[name].js',
+    filename: '[name].js',
     path: path.resolve(process.cwd(), outputPath),
   },
   resolve: {
     ...defaultConfig.resolve,
     extensions: ['.js', '.scss'],
-  },
-  module: {
-    ...defaultConfig.module,
-    rules: [
-      ...defaultConfig.module.rules,
-      {
-        test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-            },
-          },
-          'postcss-loader',
-          'sass-loader',
-        ],
-      },
-    ],
   },
   plugins: [
     // Replace LiveReload with BrowserSync in order to watch the PHP files
@@ -58,18 +35,18 @@ module.exports = {
     !isProduction &&
       new BrowserSyncPlugin(
         {
-          proxy: siteUrl,
           files: [
             '**/*.php',
             `${outputPath}/**/*.js`,
             `${outputPath}/**/*.css`,
           ],
+          open: false,
+          proxy: siteUrl,
         },
-        // Prevent BrowserSync from reloading the page and let Webpack do it
+        // Prevent BrowserSync from reloading the page and let Webpack take care of this
         { reload: false },
       ),
-    new MiniCssExtractPlugin({
-      filename: '[name]/[name].css',
-    }),
   ].filter(Boolean),
 };
+
+module.exports = config;

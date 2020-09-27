@@ -35,24 +35,47 @@ function abr_front_assets() {
 	$parent_style = 'parent-style';
 	$parent_theme = wp_get_theme( get_template() );
 
-	wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css', array(), $parent_theme->get( 'Version' ) );
-	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ), '1.0' );
+	wp_enqueue_style(
+		$parent_style,
+		get_template_directory_uri() . '/style.css',
+		array(),
+		$parent_theme->get( 'Version' )
+	);
+
+	wp_enqueue_style(
+		'child-style',
+		get_stylesheet_directory_uri() . '/style.css',
+		array( $parent_style ),
+		'1.0'
+	);
 
 	abr_enqueue_assets( 'front' );
 }
 add_action( 'wp_enqueue_scripts', 'abr_front_assets' );
 
 /**
- * Enqueue chunk scripts and styles
+ * Enqueue scripts and styles for the given entry point
  *
- * @param string $chunk Name of the chunk.
+ * @param string $entry_point Name of the chunk.
  *
  * @return void
  */
-function abr_enqueue_assets( $chunk ) {
-	$path         = "/assets/build/{$chunk}";
-	$script_asset = require get_stylesheet_directory() . "{$path}/{$chunk}.asset.php";
+function abr_enqueue_assets( $entry_point ) {
+	$path  = '/assets/build';
+	$asset = include_once get_stylesheet_directory() . "{$path}/{$entry_point}.asset.php";
 
-	wp_enqueue_script( "{$chunk}-scripts", get_stylesheet_directory_uri() . "{$path}/{$chunk}.js", $script_asset['dependencies'], $script_asset['version'], true );
-	wp_enqueue_style( "{$chunk}-styles", get_stylesheet_directory_uri() . "{$path}/{$chunk}.css", array(), $script_asset['version'] );
+	wp_enqueue_script(
+		"{$entry_point}-scripts",
+		get_stylesheet_directory_uri() . "{$path}/{$entry_point}.js",
+		$asset['dependencies'],
+		$asset['version'],
+		true
+	);
+
+	wp_enqueue_style(
+		"{$entry_point}-styles",
+		get_stylesheet_directory_uri() . "{$path}/{$entry_point}.css",
+		array(),
+		$asset['version']
+	);
 }
