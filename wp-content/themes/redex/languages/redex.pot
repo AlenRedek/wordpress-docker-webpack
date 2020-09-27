@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Redex\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-27 16:20+0000\n"
+"POT-Creation-Date: 2020-09-27 18:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -15,18 +15,20 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.3.1; wp-5.5"
 
+#. Name of the theme
+msgid "Redex"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Automated WordPress local development with Docker, Webpack, Babel, linters, "
+"and BrowserSync"
+msgstr ""
+
 #. Author of the theme
 msgid "Alen Branko Redek"
 msgstr ""
 
 #. Author URI of the theme
 msgid "https://www.redek.me/"
-msgstr ""
-
-#. Name of the theme
-msgid "Redex"
-msgstr ""
-
-#. Description of the theme
-msgid "The custom theme using the parent theme Twenty Seventeen."
 msgstr ""
