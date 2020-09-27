@@ -2,7 +2,7 @@
 /**
  * Generic global functions
  *
- * @package ABR\Global
+ * @package Redex\Global
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @return boolean
  */
-function abr_is_dev() {
+function rdx_is_dev() {
 	return current_user_can( 'administrator' );
 }
 
@@ -19,8 +19,8 @@ function abr_is_dev() {
  *
  * @return void
  */
-function abr_dump() {
-	if ( abr_is_dev() ) {
+function rdx_dump() {
+	if ( rdx_is_dev() ) {
 		$args = func_get_args();
 		echo '<pre>';
 	  // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_var_dump

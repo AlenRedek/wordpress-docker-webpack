@@ -2,7 +2,7 @@
 /**
  * Theme initialization
  *
- * @package ABR\Global
+ * @package Redex\Global
  */
 
 /**
@@ -10,28 +10,28 @@
  *
  * @return void
  */
-function abr_theme_setup() {
+function rdx_theme_setup() {
 	// Support string translations when doing AJAX requests (admin-ajax).
 	load_theme_textdomain( 'redex', get_stylesheet_directory() . '/languages' );
 }
-add_action( 'after_setup_theme', 'abr_theme_setup' );
+add_action( 'after_setup_theme', 'rdx_theme_setup' );
 
 /**
  * Enqueue admin assets
  *
  * @return void
  */
-function abr_admin_assets() {
-	abr_enqueue_assets( 'admin' );
+function rdx_admin_assets() {
+	rdx_enqueue_assets( 'admin' );
 }
-add_action( 'admin_enqueue_scripts', 'abr_admin_assets' );
+add_action( 'admin_enqueue_scripts', 'rdx_admin_assets' );
 
 /**
  * Enqueue front assets
  *
  * @return void
  */
-function abr_front_assets() {
+function rdx_front_assets() {
 	$parent_style = 'parent-style';
 	$parent_theme = wp_get_theme( get_template() );
 
@@ -49,9 +49,9 @@ function abr_front_assets() {
 		'1.0'
 	);
 
-	abr_enqueue_assets( 'front' );
+	rdx_enqueue_assets( 'front' );
 }
-add_action( 'wp_enqueue_scripts', 'abr_front_assets' );
+add_action( 'wp_enqueue_scripts', 'rdx_front_assets' );
 
 /**
  * Enqueue scripts and styles for the given entry point
@@ -60,7 +60,7 @@ add_action( 'wp_enqueue_scripts', 'abr_front_assets' );
  *
  * @return void
  */
-function abr_enqueue_assets( $entry_point ) {
+function rdx_enqueue_assets( $entry_point ) {
 	$path  = '/assets/build';
 	$asset = include_once get_stylesheet_directory() . "{$path}/{$entry_point}.asset.php";
 

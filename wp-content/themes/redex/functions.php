@@ -2,7 +2,7 @@
 /**
  * Main file
  *
- * @package ABR\Global
+ * @package Redex\Global
  */
 
 /**
