@@ -1,6 +1,6 @@
 import jQuery from 'jquery';
-import { repeat } from 'lodash-es';
+import { kebabCase } from 'lodash-es';
 
 jQuery(($) => {
-  $('.site-title a').text(repeat('example', 3));
+  $('body a').text((i, linkText) => kebabCase(linkText));
 });
