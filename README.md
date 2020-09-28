@@ -21,11 +21,14 @@
 ## Database
 
 - Navigate to [http://localhost:8080](http://localhost:8080)
-- Create a new database and import the SQL dump file
+- Create a new database
+- Optionally import the SQL dump file
 
 ## Website
 
-- Navigate to [http://localhost:8000](http://localhost:8000)
+- Navigate to [http://localhost:8000/wp-admin](http://localhost:8000/wp-admin)
+- Activate the theme
+- Update template name in `style.css` if necessary
 
 # Development
 
