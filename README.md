@@ -24,11 +24,18 @@
 - Create a new database
 - Optionally import the SQL dump file
 
-## Website
+## WordPress
 
 - Navigate to [http://localhost:8000/wp-admin](http://localhost:8000/wp-admin)
 - Activate the theme
 - Update template name in `style.css` if necessary
+
+## SMTP
+
+- Create an account at Mailjet
+- Install plugin WP Mail SMTP
+- Make sure `Force From Email` is checked
+- Use SSL encryption on port 465
 
 # Development
 
@@ -40,7 +47,7 @@
 
 ## Webpack
 
-- Start watching for the file changes `$ yarn start`
+- Start watching for file changes `$ yarn start`
 - BrowserSync is listening on [http://localhost:3000](http://localhost:3000)
 
 ## iTermocil
@@ -54,4 +61,4 @@
 
 ## Docs
 
-- For more info please refer to [https://docs.google.com/document/d/1WquaBOUj46LQmYtc3Z6TriccGV0WkLQ11ix-Te9BgcM/edit?usp=sharing](https://docs.google.com/document/d/1WquaBOUj46LQmYtc3Z6TriccGV0WkLQ11ix-Te9BgcM/edit?usp=sharing)
+- For more info please refer to [https://docs.google.com/document/d/1WquaBOUj46LQmYtc3Z6TriccGV0WkLQ11ix-Te9BgcM](https://docs.google.com/document/d/1WquaBOUj46LQmYtc3Z6TriccGV0WkLQ11ix-Te9BgcM)
