@@ -32,8 +32,9 @@ add_action( 'admin_enqueue_scripts', 'rdx_admin_assets' );
  * @return void
  */
 function rdx_front_assets() {
-	$parent_style = 'parent-style';
+	$child_theme  = wp_get_theme();
 	$parent_theme = wp_get_theme( get_template() );
+	$parent_style = 'parent-style';
 
 	wp_enqueue_style(
 		$parent_style,
@@ -46,7 +47,7 @@ function rdx_front_assets() {
 		'child-style',
 		get_stylesheet_directory_uri() . '/style.css',
 		array( $parent_style ),
-		'1.0'
+		$child_theme->get( 'Version' )
 	);
 
 	rdx_enqueue_assets( 'front' );
@@ -64,12 +65,29 @@ function rdx_enqueue_assets( $entry_point ) {
 	$path  = '/assets/build';
 	$asset = include_once get_stylesheet_directory() . "{$path}/{$entry_point}.asset.php";
 
+	if ( empty( $asset ) ) {
+		return;
+	}
+
 	wp_enqueue_script(
 		"{$entry_point}-scripts",
 		get_stylesheet_directory_uri() . "{$path}/{$entry_point}.js",
 		$asset['dependencies'],
 		$asset['version'],
 		true
+	);
+
+	wp_localize_script(
+		"{$entry_point}-scripts",
+		'rdxScriptData',
+		array(
+			'ajaxUrl' => admin_url(
+				sprintf(
+					'admin-ajax.php?_ajax_nonce=%s',
+					wp_create_nonce()
+				)
+			),
+		)
 	);
 
 	wp_enqueue_style(
