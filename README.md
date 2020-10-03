@@ -32,9 +32,10 @@
 
 ## SMTP
 
-- Create an account at Mailjet
+- Create an account at Mailjet with your WP admin email
 - Install plugin WP Mail SMTP
-- Make sure `Force From Email` is checked
+- Choose `Other SMTP Mailer`
+- Use admin email with the option `Force From Email`
 - Use SSL encryption on port 465
 
 # Development
