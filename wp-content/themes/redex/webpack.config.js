@@ -44,7 +44,9 @@ const config = {
           proxy: siteUrl,
         },
         // Prevent BrowserSync from reloading the page and let Webpack take care of this
-        { reload: false },
+        {
+          reload: false,
+        },
       ),
   ].filter(Boolean),
 };
