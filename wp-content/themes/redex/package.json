@@ -30,9 +30,11 @@
     "extends @wordpress/browserslist-config"
   ],
   "devDependencies": {
+    "@types/bootstrap": "^4.5.0",
     "@types/jquery": "1.10.35",
     "@types/lodash-es": "^4.17.3",
     "@wordpress/scripts": "^12.2.1",
+    "bootstrap": "^4.5.2",
     "browser-sync": "^2.26.12",
     "browser-sync-webpack-plugin": "^2.2.2",
     "dotenv": "^8.2.0",

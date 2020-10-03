@@ -1,0 +1,6 @@
+:root {
+  // $grays is a variable from Bootstrap core!
+  @each $color, $value in $grays {
+    --gray-#{$color}: #{$value};
+  }
+}

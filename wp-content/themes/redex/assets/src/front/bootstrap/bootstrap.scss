@@ -1,0 +1,8 @@
+// Bootstrap variable overrides - Import before Bootstrap core!
+@import 'variables';
+
+// Bootstrap core
+@import '~bootstrap/scss/bootstrap';
+
+// Bootstrap theme
+@import 'root';
