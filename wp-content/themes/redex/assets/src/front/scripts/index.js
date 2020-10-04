@@ -1,4 +1,5 @@
 // Dependencies
 import 'bootstrap';
 
-import './example/example';
+// Theme
+import './example';
