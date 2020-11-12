@@ -1,5 +1,10 @@
 body {
   h1 {
-    background: linear-gradient($primary, $gray-300);
+    @extend %fa-icon;
+    @extend .fas;
+
+    &::before {
+      content: fa-content($fa-var-hand-spock);
+    }
   }
 }
