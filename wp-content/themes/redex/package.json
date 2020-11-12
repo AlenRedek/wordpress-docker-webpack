@@ -30,6 +30,7 @@
     "extends @wordpress/browserslist-config"
   ],
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "@types/bootstrap": "^4.5.1",
     "@types/jquery": "1.10.35",
     "@types/lodash-es": "^4.17.3",

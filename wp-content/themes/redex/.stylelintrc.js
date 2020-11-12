@@ -7,5 +7,6 @@ module.exports = {
     indentation: 2,
     'no-empty-source': null,
     'string-quotes': 'single',
+    'function-url-quotes': 'always',
   },
 };
