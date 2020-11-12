@@ -27,6 +27,25 @@ const config = {
     ...defaultConfig.resolve,
     extensions: ['.js', '.scss'],
   },
+  module: {
+    ...defaultConfig.module,
+    rules: [
+      // Remove default SVG loader
+      ...defaultConfig.module.rules.filter((rule) => !rule.test.test('.svg')),
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/',
+            },
+          },
+        ],
+      },
+    ],
+  },
   plugins: [
     // Replace LiveReload with BrowserSync in order to watch the PHP files
     ...defaultConfig.plugins.filter(
