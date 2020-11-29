@@ -27,7 +27,7 @@
 	WordPress RULESET
 	#############################################################################
 	-->
-	<!-- Check PHP version 7.4 or greater -->
+	<!-- Check for cross-version support for specified PHP version and higher -->
 	<config name="testVersion" value="7.0-"/>
 	<config name="minimum_supported_wp_version" value="5.0"/>
 
