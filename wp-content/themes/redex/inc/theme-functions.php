@@ -20,11 +20,13 @@ function rdx_is_dev() {
  * @return void
  */
 function rdx_dump() {
-	if ( rdx_is_dev() ) {
-		$args = func_get_args();
-		echo '<pre>';
-	  // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_var_dump
-		var_dump( $args );
-		echo '</pre>';
+	if ( ! rdx_is_dev() ) {
+		return;
 	}
+
+	$args   = func_get_args();
+	$output = count( $args ) === 1 ? $args[0] : $args;
+
+	// phpcs:ignore
+	echo '<hr><pre>', var_dump( $output ), '</pre><hr>';
 }
