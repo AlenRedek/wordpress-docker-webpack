@@ -1,12 +1,12 @@
 <?php
 /**
- * Generic global functions
+ * Generic global functions.
  *
  * @package Redex\Global
  */
 
 /**
- * Check whether current user has admin privileges
+ * Check whether current user has admin privileges.
  *
  * @return boolean
  */
@@ -15,7 +15,7 @@ function rdx_is_dev() {
 }
 
 /**
- * Pretty var_dump
+ * Pretty var_dump.
  *
  * @return void
  */
@@ -32,7 +32,7 @@ function rdx_dump() {
 }
 
 /**
- * Return formatted datetime based on WP settings
+ * Return formatted datetime based on WP settings.
  *
  * @param string $datetime Standard format Y-m-d.
  *
@@ -49,7 +49,7 @@ function rdx_format_datetime( $datetime ) {
 }
 
 /**
- * Return current language ISO code (en, it, etc)
+ * Return current language ISO code (en, it, etc).
  *
  * @return string
  */

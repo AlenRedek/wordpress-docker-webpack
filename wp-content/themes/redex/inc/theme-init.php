@@ -1,12 +1,12 @@
 <?php
 /**
- * Theme initialization
+ * Theme initialization.
  *
  * @package Redex\Global
  */
 
 /**
- * Theme setup
+ * Theme setup.
  *
  * @return void
  */
@@ -17,7 +17,7 @@ function rdx_theme_setup() {
 add_action( 'after_setup_theme', 'rdx_theme_setup' );
 
 /**
- * Enqueue admin assets
+ * Enqueue admin assets.
  *
  * @return void
  */
@@ -27,7 +27,7 @@ function rdx_admin_assets() {
 add_action( 'admin_enqueue_scripts', 'rdx_admin_assets' );
 
 /**
- * Enqueue front assets
+ * Enqueue front assets.
  *
  * @return void
  */
@@ -55,7 +55,7 @@ function rdx_front_assets() {
 add_action( 'wp_enqueue_scripts', 'rdx_front_assets' );
 
 /**
- * Enqueue scripts and styles for the given entry point
+ * Enqueue scripts and styles for the given entry point.
  *
  * @param string $entry_point Name of the chunk.
  *
