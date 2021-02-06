@@ -81,12 +81,7 @@ function rdx_enqueue_assets( $entry_point ) {
 		"{$entry_point}-scripts",
 		'rdxScriptData',
 		array(
-			'ajaxUrl' => admin_url(
-				sprintf(
-					'admin-ajax.php?_ajax_nonce=%s',
-					wp_create_nonce( 'rdx' )
-				)
-			),
+			'ajaxUrl' => wp_nonce_url( admin_url( 'admin-ajax.php' ), 'rdx' ),
 		)
 	);
 
