@@ -34,16 +34,19 @@ function rdx_dump() {
 /**
  * Return formatted datetime based on WP settings.
  *
- * @param string $datetime Standard format Y-m-d.
+ * @param string  $datetime Standard format Y-m-d.
+ * @param boolean $include_time Display date with time.
  *
  * @return string
  */
-function rdx_format_datetime( $datetime ) {
-	$format = sprintf(
-		'%s %s',
-		get_option( 'date_format' ),
-		get_option( 'time_format' )
-	);
+function rdx_format_datetime( $datetime, $include_time = false ) {
+	$format = $include_time
+		? sprintf(
+			'%s %s',
+			get_option( 'date_format' ),
+			get_option( 'time_format' )
+		)
+		: get_option( 'date_format' );
 
 	return date_i18n( $format, strtotime( $datetime ) );
 }
