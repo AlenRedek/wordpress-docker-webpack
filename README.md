@@ -46,6 +46,10 @@
 - Install NPM dependencies `$ yarn install`
 - Install Composer dependencies `$ composer install`
 
+## PHP Code Sniffer
+
+- PHPCS does not support PHP version 8+
+
 ## Webpack
 
 - Start watching for file changes `$ yarn start`
