@@ -1,15 +1,30 @@
-# Setup
+# Wordpress Docker Webpack
 
-## Installation
+This project will help you build custom WordPress themes using:
+
+- Docker environment
+- Webpack automation
+- ESNext latest features with Babel
+- ESLint
+- StyleLint
+- Prettier
+- PHP Code Sniffer
+- Sass
+- BrowserSync
+- and so much more
+
+## Setup
+
+### Installation
 
 - Clone the repository `$ git clone <repository>`
 - Download plugins & uploads folders from the remote `$ rsync -Phvrt <user>@<host>:/path/to/wordpress/wp-content/plugins|uploads/ wp-content/plugins|uploads/`
 
-## Environment constants
+### Environment constants
 
 - Update `.env` file
 
-## Docker
+### Docker
 
 - Build an image & run Docker container `$ docker-compose up`
 - List all containers `$ docker container ls -a`
@@ -18,19 +33,19 @@
 - Shut down running containers `$ docker-compose down`
 - Delete all persisted data within containers `$ docker-compose down --volume`
 
-## Database
+### Database
 
 - Navigate to [http://localhost:8080](http://localhost:8080)
 - Create a new database
 - Optionally import the SQL dump file
 
-## WordPress
+### WordPress
 
 - Navigate to [http://localhost:8000/wp-admin](http://localhost:8000/wp-admin)
 - Activate the theme
 - Update template name in `style.css` if necessary
 
-## SMTP
+### SMTP
 
 - Create an account at Mailjet with your WP admin email
 - Install plugin WP Mail SMTP
@@ -38,32 +53,39 @@
 - Use admin email with the option `Force From Email`
 - Use SSL encryption on port 465
 
-# Development
+## Development
 
-## Dependencies
+### Dependencies
 
 - Navigate to the theme folder
 - Install NPM dependencies `$ yarn install`
 - Install Composer dependencies `$ composer install`
 
-## PHP Code Sniffer
+### PHP Code Sniffer
 
-- PHPCS does not support PHP version 8+
+- PHPCS does not support PHP version 8.0 and above
 
-## Webpack
+### Webpack
 
 - Start watching for file changes `$ yarn start`
 - BrowserSync is listening on [http://localhost:3000](http://localhost:3000)
 
-## iTermocil
+### iTermocil
 
 - Alternatively, start the project by executing the specified commands `$ itermocil`
 - Requires iTerm2 and iTermocil plugin
 
-## VS Code
+### VS Code
 
 - `.vscode/extensions.json` contains the list of recommended extensions (ESLint, StyleLint, Prettier, PHPCS)
 
-## Docs
+## References
+
+### Docs
 
 - For more info please refer to [https://docs.google.com/document/d/1WquaBOUj46LQmYtc3Z6TriccGV0WkLQ11ix-Te9BgcM](https://docs.google.com/document/d/1WquaBOUj46LQmYtc3Z6TriccGV0WkLQ11ix-Te9BgcM)
+
+### Inspired by
+
+- [https://www.npmjs.com/package/@wordpress/scripts/](https://www.npmjs.com/package/@wordpress/scripts/)
+- [https://codeable.io/wordpress-developers-intro-to-docker-part-two/](https://codeable.io/wordpress-developers-intro-to-docker-part-two/)
