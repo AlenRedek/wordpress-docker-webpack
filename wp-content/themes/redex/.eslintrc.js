@@ -10,6 +10,9 @@ module.exports = {
   },
   settings: {
     'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.scss'],
+      },
       typescript: {
         alwaysTryTypes: true,
       },
