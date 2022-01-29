@@ -1,5 +1,4 @@
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const LiveReloadPlugin = require('webpack-livereload-plugin');
 const defaultConfig = require('@wordpress/scripts/config/webpack.config');
 const dotenv = require('dotenv');
@@ -49,16 +48,8 @@ const config = {
   },
   plugins: [
     ...defaultConfig.plugins.filter(
-      (plugin) =>
-        !(
-          plugin instanceof LiveReloadPlugin ||
-          plugin instanceof CleanWebpackPlugin
-        ),
+      (plugin) => !(plugin instanceof LiveReloadPlugin),
     ),
-    // Replace default CleanWebpackPlugin options to prevent fonts removal on rebuild
-    new CleanWebpackPlugin({
-      cleanStaleWebpackAssets: false,
-    }),
     // Replace LiveReload with BrowserSync in order to watch the PHP files
     !isProduction &&
       new BrowserSyncPlugin(
