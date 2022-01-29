@@ -8,4 +8,11 @@ module.exports = {
     'prettier/prettier': ['error', defaultPrettierConfig],
     'prefer-arrow-callback': 'error',
   },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
+  },
 };
