@@ -31,7 +31,7 @@
     "extends @wordpress/browserslist-config"
   ],
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@types/bootstrap": "^4.5.1",
     "@types/jquery": "1.10.35",
     "@types/lodash-es": "^4.17.3",
@@ -41,7 +41,6 @@
     "browser-sync-webpack-plugin": "^2.2.2",
     "dotenv": "^8.2.0",
     "eslint-import-resolver-typescript": "^2.5.0",
-    "file-loader": "^6.2.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.5.1",
     "lodash-es": "^4.17.15",

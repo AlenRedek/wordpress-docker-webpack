@@ -27,22 +27,27 @@ const config = {
     ...defaultConfig.resolve,
     extensions: ['.js', '.scss'],
   },
+  performance: {
+    maxEntrypointSize: 512000,
+    maxAssetSize: 1024000,
+  },
+  stats: {
+    modules: false,
+  },
   module: {
     ...defaultConfig.module,
     rules: [
-      // Remove default SVG loader
-      ...defaultConfig.module.rules.filter((rule) => !rule.test.test('.svg')),
+      ...defaultConfig.module.rules.filter(
+        (rule) => !rule.test?.test('.svg') || !rule.issuer?.test('.scss'),
+      ),
+      // Replace default SVG loader to prevent huge CSS files filled with Base64 encoding
       {
-        test: /\.(woff(2)?|ttf|eot|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: './fonts/',
-            },
-          },
-        ],
+        test: /\.svg$/,
+        issuer: /\.(sc|sa|c)ss$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name].[hash:8][ext]',
+        },
       },
     ],
   },
