@@ -12,6 +12,11 @@ const siteUrl = process.env.WP_SITEURL;
 
 const entryPath = 'assets/src';
 const outputPath = 'assets/build';
+
+const cssLoaders = defaultConfig.module.rules
+  .find((rule) => rule.test?.test('.scss'))
+  .use.filter((rule) => !rule.loader?.includes('sass-loader'));
+
 const config = {
   ...defaultConfig,
   entry: {
@@ -37,9 +42,27 @@ const config = {
   module: {
     ...defaultConfig.module,
     rules: [
-      ...defaultConfig.module.rules.filter(
-        (rule) => !rule.test?.test('.svg') || !rule.issuer?.test('.scss'),
-      ),
+      ...defaultConfig.module.rules
+        .filter((rule) => !rule.test?.test('.scss'))
+        .filter(
+          (rule) => !rule.test?.test('.svg') || !rule.issuer?.test('.scss'),
+        ),
+      // Replace default SASS loader to ignore dart-sass warnings for external dependencies
+      {
+        test: /\.(sc|sa)ss$/,
+        use: [
+          ...cssLoaders,
+          {
+            loader: require.resolve('sass-loader'),
+            options: {
+              sourceMap: !isProduction,
+              sassOptions: {
+                quietDeps: true,
+              },
+            },
+          },
+        ],
+      },
       // Replace default SVG loader to prevent huge CSS files filled with Base64 encoding
       {
         test: /\.svg$/,
