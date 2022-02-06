@@ -1,5 +1,4 @@
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const LiveReloadPlugin = require('webpack-livereload-plugin');
 const defaultConfig = require('@wordpress/scripts/config/webpack.config');
 const dotenv = require('dotenv');
 const path = require('path');
@@ -75,9 +74,7 @@ const config = {
     ],
   },
   plugins: [
-    ...defaultConfig.plugins.filter(
-      (plugin) => !(plugin instanceof LiveReloadPlugin),
-    ),
+    ...defaultConfig.plugins,
     // Replace LiveReload with BrowserSync in order to watch the PHP files
     !isProduction &&
       new BrowserSyncPlugin(
