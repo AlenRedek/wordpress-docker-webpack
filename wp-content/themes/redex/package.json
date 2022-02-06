@@ -50,7 +50,6 @@
   "scripts": {
     "analyze": "yarn build --webpack-bundle-analyzer",
     "build": "wp-scripts build",
-    "check-engines": "wp-scripts check-engines",
     "check-licenses": "wp-scripts check-licenses --prod",
     "format:js": "wp-scripts format",
     "format:php": "./vendor/bin/phpcbf",
@@ -68,7 +67,6 @@
   },
   "lint-staged": {
     "package.json": [
-      "yarn check-engines",
       "yarn check-licenses",
       "yarn lint:pkg-json"
     ],
