@@ -2,7 +2,7 @@
   "name": "@alenredek/wordpress-docker-webpack",
   "version": "1.0.0",
   "description": "Automated WordPress local development with Docker, Webpack, Babel, linters, and BrowserSync",
-  "author": "Alen Branko Redek <alen@redek.me> (https://www.redek.me)",
+  "author": "Alen Redek <alen@redek.me> (https://www.redek.me)",
   "license": "GPL-2.0-or-later",
   "keywords": [
     "wordpress",
@@ -23,29 +23,29 @@
     "url": "https://github.com/AlenRedek/wordpress-docker-webpack/issues"
   },
   "engines": {
-    "node": ">=12.13.0",
-    "npm": ">=6.9.0",
-    "yarn": ">= 1.22.17"
+    "node": ">=12.13",
+    "npm": ">=6.9",
+    "yarn": ">=1.22"
   },
   "browserslist": [
     "extends @wordpress/browserslist-config"
   ],
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "@types/bootstrap": "^4.5.1",
+    "@fortawesome/fontawesome-free": "5.15.4",
+    "@types/bootstrap": "4.5.1",
     "@types/jquery": "1.10.35",
-    "@types/lodash-es": "^4.17.3",
-    "@wordpress/scripts": "^20.0.1",
-    "bootstrap": "^4.5.3",
-    "browser-sync": "^2.26.13",
-    "browser-sync-webpack-plugin": "^2.2.2",
-    "dotenv": "^8.2.0",
-    "eslint-import-resolver-typescript": "^2.5.0",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.5.1",
-    "lodash-es": "^4.17.15",
-    "stylelint-config-prettier": "^8.0.2",
-    "webpack-livereload-plugin": "^3.0.2"
+    "@types/lodash-es": "4.17.3",
+    "@wordpress/scripts": "20.0.1",
+    "bootstrap": "4.5.3",
+    "browser-sync": "2.26.13",
+    "browser-sync-webpack-plugin": "2.2.2",
+    "dotenv": "8.2.0",
+    "eslint-import-resolver-typescript": "2.5.0",
+    "husky": "4.3.0",
+    "lint-staged": "10.5.1",
+    "lodash-es": "4.17.15",
+    "stylelint-config-prettier": "8.0.2",
+    "webpack-livereload-plugin": "3.0.2"
   },
   "scripts": {
     "analyze": "yarn build --webpack-bundle-analyzer",
