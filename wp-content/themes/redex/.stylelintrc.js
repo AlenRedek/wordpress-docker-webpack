@@ -5,7 +5,14 @@ module.exports = {
   ],
   rules: {
     indentation: 2,
-    'string-quotes': 'single',
     'function-url-quotes': 'always',
+    'rule-empty-line-before': [
+      'always',
+      {
+        except: ['first-nested'],
+      },
+    ],
+    'scss/at-extend-no-missing-placeholder': null,
+    'string-quotes': 'single',
   },
 };
