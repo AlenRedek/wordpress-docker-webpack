@@ -1,10 +1,7 @@
 version: "3.7"
 
-volumes:
-  db_data:
-
 services:
-  wp:
+  wordpress:
     image: wordpress
     restart: always
     depends_on:
@@ -14,9 +11,10 @@ services:
     ports:
       - ${WP_PORT}:80
     volumes:
-      - ./php.ini:/usr/local/etc/php/conf.d/uploads.ini
-      - ./wp-config.php:/var/www/html/wp-config.php
+      - wordpress:/var/www/html
       - ./wp-content:/var/www/html/wp-content
+      - ./wp-config.php:/var/www/html/wp-config.php
+      - ./php.ini:/usr/local/etc/php/conf.d/uploads.ini
     env_file:
       - ./.env
 
@@ -25,7 +23,7 @@ services:
     ports:
       - ${DB_PORT}:${DB_PORT}
     volumes:
-      - db_data:/var/lib/mysql
+      - db:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
 
@@ -43,3 +41,7 @@ services:
       PMA_HOST: ${DB_HOST}
       PMA_PORT: ${DB_PORT}
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+
+volumes:
+  db:
+  wordpress:

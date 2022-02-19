@@ -31,7 +31,7 @@ This project will help you build custom WordPress themes using:
 - Enter running container `$ docker container exec -it <container_name> bash`
 - Restart containers `$ docker-compose restart`
 - Shut down running containers `$ docker-compose down`
-- Delete all persisted data within containers `$ docker-compose down --volume`
+- Delete all persisted data within containers `$ docker-compose down --volumes`
 
 ### Database
 
