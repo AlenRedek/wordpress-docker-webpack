@@ -9,7 +9,7 @@ module.exports = {
     'rule-empty-line-before': [
       'always',
       {
-        except: ['first-nested'],
+        ignore: ['inside-block'],
       },
     ],
     'scss/at-extend-no-missing-placeholder': null,
