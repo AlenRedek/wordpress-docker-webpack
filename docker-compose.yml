@@ -18,17 +18,19 @@ services:
     env_file:
       - ./.env
 
-  db:
-    image: mariadb
+  database:
+    image: mysql:5.7
+    restart: always
     ports:
       - ${DB_PORT}:${DB_PORT}
     volumes:
-      - db:/var/lib/mysql
+      - database:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
 
-  db_admin:
-    image: phpmyadmin/phpmyadmin
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
     depends_on:
       - ${DB_HOST}
     links:
@@ -43,5 +45,5 @@ services:
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
 
 volumes:
-  db:
+  database:
   wordpress:
