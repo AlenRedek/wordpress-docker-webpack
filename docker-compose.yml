@@ -14,7 +14,7 @@ services:
       - wordpress:/var/www/html
       - ./wp-content:/var/www/html/wp-content
       - ./wp-config.php:/var/www/html/wp-config.php
-      - ./php.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - ./php.ini:/usr/local/etc/php/conf.d/custom.ini
     env_file:
       - ./.env
 
@@ -37,12 +37,11 @@ services:
       - ${DB_HOST}
     ports:
       - 8080:80
-    volumes:
-      - ./php.ini:/usr/local/etc/php/conf.d/phpmyadmin-misc.ini
     environment:
       PMA_HOST: ${DB_HOST}
       PMA_PORT: ${DB_PORT}
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      UPLOAD_LIMIT: 1024M
 
 volumes:
   database:
