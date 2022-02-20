@@ -72,7 +72,8 @@ This project will help you build custom WordPress themes using:
 
 ### iTermocil
 
-- Alternatively, start the project by executing the specified commands `$ itermocil`
+- Change the project root folder inside the `itermocil.yml` file ($PWD is not supported)
+- Start the project by executing the specified commands with `$ itermocil`
 - Requires iTerm2 and iTermocil plugin
 
 ### VS Code
