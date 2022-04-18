@@ -1,7 +1,0 @@
-windows:
-  - name: wordpress-docker-webpack
-    root: ~/Development/wordpress-docker-webpack
-    layout: even-vertical
-    panes:
-      - docker-compose up
-      - cd wp-content/themes/redex && yarn start

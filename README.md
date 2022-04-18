@@ -61,20 +61,14 @@ This project will help you build custom WordPress themes using:
 - Install NPM dependencies `$ yarn install`
 - Install Composer dependencies `$ composer install`
 
-### PHP Code Sniffer
-
-- PHPCS does not support PHP version 8.0 and above
-
 ### Webpack
 
 - Start watching for file changes `$ yarn start`
 - BrowserSync is listening on [http://localhost:3000](http://localhost:3000)
 
-### iTermocil
+### PHP Code Sniffer
 
-- Change the project root folder inside the `itermocil.yml` file ($PWD is not supported)
-- Start the project by executing the specified commands with `$ itermocil`
-- Requires iTerm2 and iTermocil plugin
+- PHPCS does not support PHP version 8.0 and above
 
 ### VS Code
 
