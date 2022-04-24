@@ -78,7 +78,7 @@ This project will help you build custom WordPress themes using:
 
 ### Theme
 
-- Exclude `node_modules` folder (required packages are already bundled inside `assets/build`)
+- Exclude `node_modules` folder (required packages are already bundled inside the `assets/build` folder)
 - Include `vendor` folder
 - Upload everything else from the theme folder
 
