@@ -74,6 +74,18 @@ This project will help you build custom WordPress themes using:
 
 - `.vscode/extensions.json` contains the list of recommended extensions (ESLint, StyleLint, Prettier, PHPCS)
 
+## Deployment
+
+### Theme
+
+- Exclude `node_modules` folder (required packages are already bundled inside `assets/build`)
+- Include `vendor` folder
+- Upload everything else from the theme folder
+
+### Database
+
+- Manually export/import the modified content, settings and other data
+
 ## References
 
 ### Docs
