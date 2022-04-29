@@ -86,6 +86,25 @@ This project will help you build custom WordPress themes using:
 
 - Manually export/import the modified content, settings and other data
 
+## Upgrades
+
+### NPM
+
+- Navigate to the theme folder and open the `package.json` file
+- Find the latest version for each dependency at [https://www.npmjs.com/](https://www.npmjs.com/)
+- Change the dependency version number
+- Update the dependencies with `$ yarn install`
+- Don't use the `~` and `^` identifiers
+- Don't use the `$ yarn upgrade` command
+- The dependencies installed in `node_modules` should strictly match the versions defined in `package.json`
+
+### Composer
+
+- Navigate to the theme folder and open the `composer.json` file
+- Find the latest version for each dependency at [https://packagist.org/](https://packagist.org/)
+- Change the dependency version number
+- Update the dependencies with `$ composer update`
+
 ## References
 
 ### Docs
