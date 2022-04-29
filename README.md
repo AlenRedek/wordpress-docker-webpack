@@ -94,6 +94,7 @@ This project will help you build custom WordPress themes using:
 - Find the latest version for each dependency at [https://www.npmjs.com/](https://www.npmjs.com/)
 - Change the dependency version number
 - Update the dependencies with `$ yarn install`
+- Check if all the scripts from the `package.json` file are working correctly
 - Don't use the `~` and `^` identifiers
 - Don't use the `$ yarn upgrade` command
 - The dependencies installed in `node_modules` should strictly match the versions defined in `package.json`
@@ -104,6 +105,7 @@ This project will help you build custom WordPress themes using:
 - Find the latest version for each dependency at [https://packagist.org/](https://packagist.org/)
 - Change the dependency version number
 - Update the dependencies with `$ composer update`
+- Check if the PHP related scripts from the `package.json` file are working correctly
 
 ## References
 
