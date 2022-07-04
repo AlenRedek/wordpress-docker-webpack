@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Redex\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-18 16:53+0000\n"
+"POT-Creation-Date: 2022-07-04 20:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -23,6 +23,10 @@ msgstr ""
 msgid ""
 "Automated WordPress local development with Docker, Webpack, Babel, linters, "
 "and BrowserSync"
+msgstr ""
+
+#: inc/theme-functions.php:46
+msgid "Briefly unavailable for scheduled maintenance. Check back in a minute."
 msgstr ""
 
 #. Author URI of the theme

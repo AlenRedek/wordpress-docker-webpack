@@ -32,6 +32,21 @@ function rdx_dump() {
 }
 
 /**
+ * Allow access only to the user with a specific IP address and block all others (also admin).
+ *
+ * @param string $skip_ip_address Skip the maintenance mode for this IP address.
+ *
+ * @return void
+ */
+function rdx_maintenance_mode( $skip_ip_address ) {
+	if ( isset( $_SERVER['REMOTE_ADDR'] ) && $_SERVER['REMOTE_ADDR'] === $skip_ip_address ) {
+		return;
+	}
+
+	wp_die( esc_html__( 'Briefly unavailable for scheduled maintenance. Check back in a minute.', 'redex' ) );
+}
+
+/**
  * Return formatted datetime based on WP settings.
  *
  * @param string  $datetime Standard format Y-m-d.
