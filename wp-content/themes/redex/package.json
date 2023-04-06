@@ -23,9 +23,9 @@
     "url": "https://github.com/AlenRedek/wordpress-docker-webpack/issues"
   },
   "engines": {
-    "node": ">=12.13",
-    "npm": ">=6.9",
-    "yarn": ">=1.22"
+    "node": ">=16.16",
+    "yarn": ">=1.22",
+    "npm": "please-use-yarn"
   },
   "browserslist": [
     "extends @wordpress/browserslist-config"
