@@ -6,4 +6,13 @@ module.exports = {
   useTabs: false,
   tabWidth: 2,
   trailingComma: 'all',
+  overrides: [
+    ...(defaultConfig.overrides ?? []),
+    {
+      files: '*.{css,sass,scss}',
+      options: {
+        singleQuote: true,
+      },
+    },
+  ],
 };
