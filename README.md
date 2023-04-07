@@ -111,7 +111,7 @@ This project will help you build custom WordPress themes using:
 
 ### Docs
 
-- For more info please refer to [https://docs.google.com/document/d/1WquaBOUj46LQmYtc3Z6TriccGV0WkLQ11ix-Te9BgcM](https://docs.google.com/document/d/1WquaBOUj46LQmYtc3Z6TriccGV0WkLQ11ix-Te9BgcM)
+- For more info please refer to [https://medium.com/@alenredek/5dae5cc92f30](https://medium.com/@alenredek/5dae5cc92f30)
 
 ### Inspired by
 
